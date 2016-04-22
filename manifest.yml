@@ -3,7 +3,8 @@ applications:
 - name: loggenerator
   memory: 128M
   instances: 1
-  path: ./target/build/LogGenerator.jar
+  path: ./LogGenerator.jar
   no-route: true
+  health-check-type: none
   env:
     DURATION: 200
